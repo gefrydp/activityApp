@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HalamanDaftar">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:hint="Email"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:hint="Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:inputType="textPassword"
+            app:layout_constraintTop_toBottomOf="@id/emailEditText"
+            app:layout_constraintBottom_toTopOf="@+id/buttonPageDaftar"/>
+
+        <Button
+            android:id="@+id/buttonPageMasuk"
+            android:text="Masuk"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_main"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@id/passwordEditText"
+            app:layout_constraintEnd_toEndOf="@id/passwordEditText"
+            app:layout_constraintTop_toBottomOf="@id/passwordEditText"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Aktifitas">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="50dp">
+
+        <TextView
+            android:id="@+id/activityNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingBottom="20dp"
+            android:textColor="@color/purple_500"
+            android:text="Aktifitas apa yang akan kamu lakukan?"
+            tools:ignore="MissingConstraints" />
+        <EditText
+            android:id="@+id/activityEditText"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/lightGrey"
+            app:layout_constraintTop_toBottomOf="@id/activityNotes"
+            android:hint="Ketik disini"/>
+
+        <Button
+            android:id="@+id/buttonTambahAktifitas"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Tambah"
+            android:background="@drawable/button_main"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activityEditText"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
